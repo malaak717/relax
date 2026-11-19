@@ -1,0 +1,359 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F3E9;
+    color: #203D33;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 6%;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #203D33;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #203D33;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #203D33;
+}
+
+.nav-button,
+.main-button {
+    background-color: #203D33;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-button:hover,
+.main-button:hover {
+    background-color: #6C8573;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 430px;
+    padding: 60px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.small-title {
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-bottom: 20px;
+    color: #82917C;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    margin-bottom: 35px;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    max-width: 550px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 48% 48% 12px 12px;
+}
+
+.image-note {
+    position: absolute;
+    right: -20px;
+    top: 25px;
+    background: #F8F3E9;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+
+/* DISCOVER */
+
+.discover {
+    padding: 40px 5%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.section-heading span {
+    width: 100px;
+    height: 1px;
+    background-color: #203D33;
+}
+
+.section-description {
+    text-align: center;
+    margin: 10px 0 30px;
+    color: #69766A;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 10px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.card-content p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* MOOD */
+
+.mood {
+    margin: 15px 5%;
+    padding: 30px;
+    background-color: #D8D9C6;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mood-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.mood-text p {
+    font-size: 14px;
+    color: #59695D;
+}
+
+.mood-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.mood-buttons button {
+    background-color: #F8F3E9;
+    border: 1px solid #9BA493;
+    padding: 14px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    color: #203D33;
+    transition: 0.3s;
+}
+
+.mood-buttons button:hover {
+    background-color: #203D33;
+    color: white;
+}
+
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    color: #69766A;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    border-top: 1px solid #D3D0C5;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mood {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading span {
+        display: none;
+    }
+
+    .mood-buttons {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THE OTHER SIDE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">✧ THE OTHER SIDE.</a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#discover">Discover</a>
+            <a href="#quiz">Take the Quiz</a>
+            <a href="#about">About Us</a>
+        </nav>
+
+        <a href="#discover" class="nav-button">Start Exploring →</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <p class="small-title">YOUR JOURNEY STARTS HERE</p>
+
+            <h1>There's more<br>to you than you know.</h1>
+
+            <p class="subtitle">
+                A little curiosity can lead to a whole new you.
+            </p>
+
+            <a href="#discover" class="main-button">
+                Explore Your Side →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1000"
+            alt="Beautiful nature">
+
+            <div class="image-note">
+                Try.<br>Discover.<br>Grow.
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover" id="discover">
+
+        <div class="section-heading">
+            <span></span>
+            <h2>Explore Different Sides</h2>
+            <span></span>
+        </div>
+
+        <p class="section-description">
+            Step out of your comfort zone and try something new.
+        </p>
+
+        <div class="cards">
+
+            <div class="card" data-category="creative">
+                <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=700" alt="Pottery">
+                <div class="card-content">
+                    <h3>Make Something</h3>
+                    <p>Discover your creative side.</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="creative">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700" alt="Painting">
+                <div class="card-content">
+                    <h3>Create Something</h3>
+                    <p>Express yourself through art.</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="adventure">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700" alt="Adventure">
+                <div class="card-content">
+                    <h3>Go Somewhere</h3>
+                    <p>Find your next adventure.</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="relaxing">
+                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=700" alt="Coffee">
+                <div class="card-content">
+                    <h3>Slow Down</h3>
+                    <p>Take a moment for yourself.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Mood Section -->
+    <section class="mood" id="quiz">
+
+        <div class="mood-text">
+            <h2>What are you in the mood for?</h2>
+            <p>Your next favorite thing might be something you've never tried.</p>
+        </div>
+
+        <div class="mood-buttons">
+            <button onclick="filterCards('creative')">🎨 Creative</button>
+            <button onclick="filterCards('adventure')">⛰ Adventure</button>
+            <button onclick="filterCards('relaxing')">☁ Relaxing</button>
+            <button onclick="showAll()">✨ Show All</button>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>A world beyond your comfort zone.</h2>
+
+        <p>
+            The Other Side is all about discovering new experiences,
+            exploring hidden interests and becoming the person
+            you've always wanted to be.
+        </p>
+
+        <a href="#discover" class="main-button">
+            Find Your Next Experience →
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>THE OTHER SIDE ©️ 2026</p>
+        <p>There's always another side to discover. ✧</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
